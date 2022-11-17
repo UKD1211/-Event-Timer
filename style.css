@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+} */
+body {
+    /* background: #000  url(1669055.jpg); */
+    background: #000 url(exp2.jpg);
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+}
+
+.container {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    /* background: url(1669055.jpg); */
+    background: url(exp2.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 100px rgba(0, 0, 0, .1);
+
+    border-radius: 10px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 4.6em;
+    line-height: 0.7em;
+    color: #333;
+    margin-top: -80px;
+}
+
+.container h2 span {
+    display: block;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 24px;
+    /* color: #eafe00; */
+}
+
+.container h2 span1 {
+    /* background:  linear-gradient(to right, #e5f3eb,#eafe00,#eea9ac); */
+    /* color: crimson; */
+}
+
+.countdown {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.countdown div {
+    position: relative;
+    width: 100px;
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+    border-radius: 10px;
+    /* flex-direction: row; */
+
+}
+
+.countdown div:before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #e5f3eb, #00e2fe, #eb8286);
+    /* background-color: #fff; */
+    color: #333;
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 35px;
+    font-weight: 505;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.countdown #day:before {
+    content: 'Days';
+    /* align-items: center; */
+
+}
+
+.countdown #hour:before {
+    content: 'Hours';
+    /* align-items: center; */
+}
+
+.countdown #minute:before {
+    content: 'Minutes';
+}
+
+.countdown #second:before {
+    content: 'Seconds';
+}
+
+
+@media only screen and(max-width:1120px) {
+    .countdown{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
